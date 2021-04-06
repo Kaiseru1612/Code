@@ -9,4 +9,10 @@
 /cygdrive/e/Code/3_4_2021_Lab_ex_string/main.cpp
 iostream
 -
+string
+-
+string.h
+-
+cstring
+-
 
