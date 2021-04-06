@@ -187,7 +187,6 @@ int main() {
     else cout << n << " is not a prime number" << endl;
     if (n>1) cout << prime;
     else cout << -1;*/
-
 /*    int n,m;
     int tmp;
     cin >> m >> n;
@@ -224,7 +223,7 @@ int main() {
         delete[] a[i];
     }
     delete[] a;*/
-    int n,m;
+/*    int n,m;
     int min;
     int minlocy;
     int saddle;
@@ -264,6 +263,23 @@ int main() {
     for (int i = 0; i < m; i++) {
         delete[] a[i];
     }
-    delete[] a;
+    delete[] a;*/
+/*    int m;
+    int tmpMax=0;
+    int Max;
+    cin >> m;
+    int* a = new int[m];
+    for (int i = 0; i < m; i++) {
+        cin >> a[i];
+    }
+    tmpMax = a[0];
+    Max = tmpMax;
+
+    for (int i = 1; i < m; i++ ) {
+        Max = max(a[i], Max+a[i]);
+        tmpMax = max(tmpMax, Max);
+    }
+    cout << tmpMax;
+    delete[] a;*/
     return 0;
 }
