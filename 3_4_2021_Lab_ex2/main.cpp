@@ -225,9 +225,8 @@ int main() {
     }
     delete[] a;*/
     int n,m;
-    int tmp;
-    int min,max;
-    int minlocx,minlocy,maxlocx,maxlocy;
+    int min;
+    int minlocy;
     int saddle;
     bool found=false;
     cin >> m >> n;
@@ -237,40 +236,27 @@ int main() {
     }
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            a[i][j] = rand()%10;
+            cin >> a[i][j];
         }
     }
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            cout << a[i][j] << " ";
-        }
-        cout << endl;
-    }
-    for (int i = 0; i < m; i++) {
-        min = a[i][0];
-        minlocx = i;
-        minlocy = 0;
-        for (int j = 0; j < n; j++) {
-            if (a[i][j]< min) {
+    for (int i = 0; i < n; i++)
+    {
+        min = a[i][0], minlocy = 0;
+        for (int j = 1; j < n; j++)
+        {
+            if (min > a[i][j])
+            {
                 min = a[i][j];
-                minlocx = i;
                 minlocy = j;
             }
         }
-        max = a[i][minlocy];
-        maxlocx = i;
-        maxlocy = minlocy;
-        for (int j = 0; j < m; j++) {
-            if (a[j][minlocy]>max){
-                max = a[j][minlocy];
-                maxlocx=j;
-                maxlocy=minlocy;
-            }
-        }
-        if (minlocx == maxlocx && minlocy == maxlocy){
-            saddle = a[minlocx][minlocy];
+        int k;
+        for (k = 0; k < n; k++)
+            if (min < a[k][minlocy]) break;
+        if (k == n)
+        {
             found = true;
-            break;
+            saddle = min;
         }
     }
     if (found) cout << saddle;
