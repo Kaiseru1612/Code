@@ -1,0 +1,3 @@
+﻿  year.cpp
+E:\Code\year\year.cpp(7,25): warning C4101: 'month': unreferenced local variable
+  year.vcxproj -> E:\Code\year\Debug\year.exe

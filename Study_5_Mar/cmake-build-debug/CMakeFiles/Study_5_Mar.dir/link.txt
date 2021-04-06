@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Study_5_Mar.dir/main.cpp.o  -o Study_5_Mar.exe -Wl,--out-implib,libStudy_5_Mar.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

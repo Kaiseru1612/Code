@@ -1,0 +1,2 @@
+E:\Code\daysofmonth\Debug\daysofmonth.exe
+E:\Code\daysofmonth\Debug\daysofmonth.pdb

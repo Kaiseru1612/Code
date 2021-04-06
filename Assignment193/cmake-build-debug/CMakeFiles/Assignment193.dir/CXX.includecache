@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Code/Assignment193/defs.h
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+fstream
+-
+string.h
+-
+
+E:/Code/Assignment193/sword.cpp
+defs.h
+E:/Code/Assignment193/defs.h
+cmath
+-
+

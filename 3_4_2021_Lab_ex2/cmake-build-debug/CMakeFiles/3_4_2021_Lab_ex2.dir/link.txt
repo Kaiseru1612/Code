@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/3_4_2021_Lab_ex2.dir/main.cpp.o  -o 3_4_2021_Lab_ex2.exe -Wl,--out-implib,lib3_4_2021_Lab_ex2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

@@ -1,0 +1,2 @@
+E:\Code\TriangleNumber\Debug\TriangleNumber.exe
+E:\Code\TriangleNumber\Debug\TriangleNumber.pdb

@@ -1,0 +1,1119 @@
+#ifndef _definition_h_
+#include "defs.h"
+#define _definition_h_
+#endif
+
+void Checkmode1(int event, bool &shield, bool &spear, bool &hair){
+    if((hash(97) > hash(96)) && (hash(96) > hash(95))){
+        if (event == 95) shield = true;
+        if (shield && event == 96) spear = true;
+        if (spear && event == 97 && shield) hair =true;
+    }
+    if ((hash(97) > hash(95)) && (hash(95) > hash(96))){
+        if (event == 96) spear = true;
+        if (spear && event == 95) shield = true;
+        if (shield && event == 97 && spear) hair =true;
+        if ((hash(96) > hash(97)) && (hash(97) > hash(95))){
+            if (event == 95) shield = true;
+            if (shield && event == 97) hair =true;
+            if (hair  && event == 96 && shield) spear = true;
+        }
+    }
+    if ((hash(95) > hash(97)) && (hash(97) > hash(96))){
+        if (event == 96) spear = true;
+        if (spear && event == 97) hair =true;
+        if (hair  && event == 95 && spear) shield = true;
+    }
+    if ((hash(95) > hash(96)) && (hash(96) > hash(97))){
+        if (event == 97) hair =true;
+        if (hair  && event == 96) spear = true;
+        if (spear && event == 95 && hair ) shield = true;
+        if ((hash(96) > hash(95)) && (hash(95) > hash(97))){
+            if (event == 97) hair =true;
+            if (hair  && event == 95) shield = true;
+            if (shield && event == 96 && hair ) spear = true;
+        }
+
+    }
+}
+bool isPrimeNumber(int n) {
+    int l;
+    for (l = 2; l < n; l++)
+    {
+        if (n % l == 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+bool isEternalLove(bool &spear, bool &hair, bool &excalibur,bool &arthur, bool &lancelot, bool &guinevere){
+    if (spear && hair && !excalibur){
+        return true;
+    }
+    if (arthur && hair) {return true;}
+    if (lancelot && hair) {return true;}
+    if (guinevere && spear) {return true;}
+    return false;
+}
+bool isdragonknight(int n)
+{
+    int c;
+    for (int a = 1; a < n; a++) {
+        for (int b = 1; b < n ; b++) {
+            c = n-a-b;
+            if (c*c==b*b+a*a){return  true;}
+        }
+    }
+    return false;
+}
+/*bool issquarenumber(double a)
+{
+    double check = ((double)sqrt(a) - (int)sqrt(a)) ;
+    if (check == 0){return true;}
+    else {return false;}
+}
+bool isdragonKnight(int HP) {
+    for (int i = 2; i < HP; i++)
+        for (int j = i; j < HP; j++) {
+            if (sqrt(i * i + j * j) > 500) break;
+            if (issquarenumber(i * i + j * j)) { return true; }
+        }
+    return false;
+}*/
+bool isluckynum(int n){
+    int a[72] = {1, 3, 7, 9, 13, 15, 21, 25, 31, 33,
+                 37, 43, 49, 51, 63, 67, 69, 73, 75,
+                 79, 87, 93, 99, 105, 111, 115, 127,
+                 129, 133, 135, 141, 151, 159, 163,
+                 169, 171, 189, 193, 195, 201, 205,
+                 211, 219, 223, 231, 235, 237, 241,
+                 259, 261, 267, 273, 283, 285, 289,
+                 297, 303};
+    for (int i = 0; i <= 72; i++) {
+        if  (n == a[i]){return true;}
+    }
+    return false;
+}
+int levelOcal (int i){
+    int b = i % 10;
+    int level0;
+    level0 = ((i > 6)?(b > 5?b:5):b);
+    return level0;
+}
+bool isfibonacci (int n)
+{
+    int a= 0, b =1;
+    int c;
+    for (int i = 1; i < n; i++) {
+        if (i==1){if (n==0) {return true;} else continue;}
+        if (i==2){if (n==1) {return true;} else continue;}
+        c = a + b;
+        a = b;
+        b = c;
+        if (n==c){return true;}
+    }
+    return false;
+}
+bool isfriendlynumber(int a, int b)
+{
+    int sum1 = 0, sum2=0;
+    for (int i = 1; i <= a; i++) {
+        if (a%i==0){sum1+=i;}
+    }
+    for (int j = 1; j <= b ; j++) {
+        if (b%j==0){sum2+=j;}
+    }
+    if (((sum1)/a) == (sum2 / b))
+    {
+        return true;
+    }
+    return false;
+}
+int sumdigit(int a)
+{
+    int sum = 0, digit = 0;
+    while (a > 0)
+    {
+        digit = a % 10;
+        sum = sum + digit;
+        a = a / 10;
+    }
+    return sum;
+}
+int sumPrimeFactor(int n)
+{
+    int i=2, sum=0;
+    while(n>1)
+    {
+        if(n%i==0)
+        {
+            sum=sum+sumdigit(i);
+            n=n/i;
+        }
+        else
+            i++;
+    }
+    return sum;
+}
+bool isCompositenumber(int n)
+{
+    int c=0;
+    for(int i=1; i<=n; i++)
+    {
+        if(n%i==0)
+        {
+            c++;
+        }
+    }
+    if(c>2)
+        return true;
+    else
+        return false;
+}
+bool isSmithnumber (int n)
+{
+    if(isCompositenumber(n) && (sumdigit(n) == sumPrimeFactor(n))){return true;}
+    else {return false;}
+}
+//(int &i, int &j)
+report*  walkthrough (knight& theKnight, castle arrCastle[], int nCastle, int mode, int nPetal)
+{
+    report* pReturn;
+    int bFlag = 0;
+    int nWin=0, nLose=0, Petal = nPetal;
+    int antidote = 0;
+    int levelO, b = 0;
+    int MaxHP = theKnight.HP;
+    int curseringcount = 0;
+    int Lionheartcount = 0;
+    int ninacount = 0;
+    int countDurian = 0;
+    int poisoncount = 0;
+    int Odincount = 0;
+    int fakearmorcount = 0;
+    int Katanacount = 1;
+    int Realodinlive = 1;
+    int FakeodinLive = 0;
+    int fakeOdincount = 0;
+    int revivedoorcount = 0;
+    int Doori, Doorj;
+    int Goldcoin = 0;
+    int Devilwingcount = 0;
+    int *troll[1];
+    bool battle = false;
+    bool excalibur = false;
+    bool shield = false;
+    bool hair = false;
+    bool spear = false;
+    bool Katana = false;
+    bool Lionheart = false;
+    bool nina = false ;
+    bool Durian = true;
+    bool Durianchop = false;
+    bool poison = false;
+    bool Mythrilarmor = false;
+    bool lockdoor;
+    bool arthur = false;
+    bool guinevere = false;
+    bool lancelot = false;
+    bool paladin = false;
+    bool dragonKnight = false;
+    bool fakearmor = false;
+    bool WinOmega = false;
+    bool Odin = false;
+    bool fakeOdin = false;
+    bool revivedoor = false;
+    bool Devilwing = false;
+    bool Devilwingmeet = false;
+    bool WinUlti = false;
+    //fighting for the existence of mankind here
+    if (theKnight.HP == 999) { arthur = true; }
+    if (theKnight.HP == 888) {
+        lancelot = true;
+        spear = true;
+    }
+    if (theKnight.HP == 777) {
+        guinevere = true;
+        hair = true;
+    }
+    if (isSmithnumber(theKnight.HP)){paladin = true; shield = true;}
+    if (isdragonknight(theKnight.HP) && theKnight.HP != 888){dragonKnight=true;}
+    LinkStart:
+    for (int j = 0; j < nCastle; j++) {
+        for (int i = 0; i < arrCastle[j].nEvent; i++) {
+            
+            switch (arrCastle[j].arrEvent[i]) {
+                case 1://MadBear
+                    battle = true;
+                    //arthur
+                    if (arthur)
+                    {
+                        if (excalibur || Lionheart){
+                            nWin++;
+                            theKnight.gil += 100;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                        } else{
+                            if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                            {
+                                nWin++;
+                                theKnight.gil += 100;
+                                if (theKnight.gil>999){theKnight.gil=999;}
+                            }
+
+                        }
+                        if (poison)
+                        {
+                            if (theKnight.HP - (1 * levelOcal(i+1) * 10)<=0){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = theKnight.HP - (1 * levelOcal(i+1) * 10);
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    //lancelot
+                    if (lancelot || paladin)
+                    {
+                        nWin++;
+                        theKnight.gil += 100;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                        if (poison)
+                        {
+                            if (theKnight.HP - (1 * levelOcal(i+1) * 10)<=0){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = theKnight.HP - (1 * levelOcal(i+1) * 10);
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (Lionheart || Odin)
+                    {
+                        nWin++;
+                        theKnight.gil += 100;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                    }
+                    else
+                    {
+                        if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                        {
+                            nWin++;
+                            theKnight.gil += 100;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                        } else {
+                            nLose++;
+                            if (!Mythrilarmor) {
+                                if (theKnight.HP - (1 * levelOcal(i + 1) * 10) <= 0) {
+                                    callPhoenix(theKnight,MaxHP);
+                                    poison = false; poisoncount = 0;
+                                    if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                                }
+                                else theKnight.HP = theKnight.HP - (1 * levelOcal(i + 1) * 10);
+                            }
+                        }
+                    }
+
+                    if (poison)
+                    {
+                        if (theKnight.HP - (1 * levelOcal(i+1) * 10)<=0){
+                            callPhoenix(theKnight,MaxHP);
+                            poison = false; poisoncount = 0;
+                            if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                        }
+                        else    theKnight.HP = theKnight.HP - (1 * levelOcal(i+1) * 10);
+                    }
+                    break;
+                case 2://MoonBringer
+                    battle=true;
+                    //arthur
+                    if (arthur)
+                    {
+                        if (excalibur || Lionheart){
+                            nWin++;
+                            theKnight.gil += 150;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                        } else{
+                            if (theKnight.level >= levelOcal(i+1) && !fakeOdin && !fakearmor)
+                            {
+                                nWin++;
+                                theKnight.gil += 150;
+                                if (theKnight.gil>999){theKnight.gil=999;}
+                            }
+
+                        }
+                        if (poison)
+                        {
+                            if (theKnight.HP - (1.5 * levelOcal(i+1) * 10)<=0){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = (int)(theKnight.HP - (1.5 * levelOcal(i+1) * 10));
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (lancelot || paladin)
+                    {
+                        nWin++;
+                        theKnight.gil += 150;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                        if (poison)
+                        {
+                            if (theKnight.HP - (1.5 * levelOcal(i+1) * 10)<=0){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = (int)(theKnight.HP - (1.5 * levelOcal(i+1) * 10));
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (guinevere){
+                        if (Lionheart || Odin)
+                        {
+                            nWin++;
+                            theKnight.gil += 150;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                        }
+                        else
+                        {
+                            if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                            {
+                                nWin++;
+                                theKnight.gil += 150;
+                                if (theKnight.gil>999){theKnight.gil=999;}
+                            } else {
+                                nLose++;
+                                if (!Mythrilarmor) {
+                                    if ((theKnight.HP - (1.5 * levelOcal(i + 1) * 10)/4) <= 0) {
+                                        callPhoenix(theKnight, MaxHP);
+                                        poison = false; poisoncount = 0;
+                                        if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                                    }
+                                    else theKnight.HP = (int) (theKnight.HP - (1.5 * levelOcal(i + 1) * 10)/4);
+                                }
+                            }
+                        }
+                        if (poison)
+                        {
+                            if ((theKnight.HP - (1.5 * levelOcal(i + 1) * 10)/4) <= 0) {
+                                callPhoenix(theKnight, MaxHP);
+                                poison = false; poisoncount = 0;
+                            }
+                            else theKnight.HP = (int) (theKnight.HP - (1.5 * levelOcal(i + 1) * 10)/4);
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (Lionheart || Odin)
+                    {
+                        nWin++;
+                        theKnight.gil += 150;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                    }
+                    else
+                    {
+                        if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                        {
+                            nWin++;
+                            theKnight.gil += 150;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                        } else {
+                            nLose++;
+                            if (!Mythrilarmor) {
+                                if (theKnight.HP - (1.5 * levelOcal(i + 1) * 10) <= 0) {
+                                    callPhoenix(theKnight, MaxHP);
+                                    poison = false; poisoncount = 0;
+                                    if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                                }
+                                else theKnight.HP = (int) (theKnight.HP - (1.5 * levelOcal(i + 1) * 10));
+                            }
+                        }
+                    }
+                    if (poison)
+                    {
+                        if (theKnight.HP - (1.5 * levelOcal(i+1) * 10)<=0){
+                            callPhoenix(theKnight,MaxHP);
+                            poison = false; poisoncount = 0;
+                            if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                        }
+                        else    theKnight.HP = (int)(theKnight.HP - (1.5 * levelOcal(i+1) * 10));
+                    }
+                    break;
+                case 3://Elf
+                    battle=true;
+                    if (arthur)
+                    {
+                        if (excalibur || Lionheart){
+                            nWin++;
+                            theKnight.gil += 450;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                        } else{
+                            if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                            {
+                                nWin++;
+                                theKnight.gil += 450;
+                                if (theKnight.gil>999){theKnight.gil=999;}
+                            }
+
+                        }
+                        if (poison)
+                        {
+                            if (theKnight.HP - (4.5 * levelOcal(i+1) * 10)<=0){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = (int)(theKnight.HP - (4.5 * levelOcal(i+1) * 10));
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (lancelot || paladin)
+                    {
+                        nWin++;
+                        theKnight.gil += 450;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                        antidote++;
+                        if (poison)
+                        {
+                            if (theKnight.HP - (4.5 * levelOcal(i+1) * 10)<=0){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = (int)(theKnight.HP - (4.5 * levelOcal(i+1) * 10));
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (Lionheart || Odin)
+                    {
+                        nWin++;
+                        theKnight.gil += 450;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                        antidote++;
+                    }
+                    else
+                    {
+                        if (theKnight.level >= levelOcal(i+1) && !fakeOdin && !fakearmor)
+                        {
+                            nWin++;
+                            theKnight.gil += 450;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                            antidote++;
+                        } else {
+                            nLose++;
+                            if (!Mythrilarmor) {
+                                if (theKnight.HP - (4.5 * levelOcal(i + 1) * 10) <= 0) {
+                                    callPhoenix(theKnight, MaxHP);
+                                    poison = false; poisoncount = 0;
+                                    if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                                }
+                                else theKnight.HP = (int) (theKnight.HP - (4.5 * levelOcal(i + 1) * 10));
+                            }
+                        }
+                    }
+                    if (poison)
+                    {
+                        if (theKnight.HP - (4.5 * levelOcal(i+1) * 10)<=0){callPhoenix(theKnight,MaxHP);
+                            poison = false; poisoncount = 0;
+                            if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                        }
+                        else    theKnight.HP = (int)(theKnight.HP - (4.5 * levelOcal(i+1) * 10));
+                    }
+                    break;
+                case 4://Saxon
+                    battle=true;
+                    if (arthur)
+                    {
+                        if (excalibur || Lionheart){
+                            nWin++;
+                            theKnight.gil += 650;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                        } else{
+                            if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                            {
+                                nWin++;
+                                theKnight.gil += 650;
+                                if (theKnight.gil>999){theKnight.gil=999;}
+                            }
+
+                        }
+                        if (poison)
+                        {
+                            if (theKnight.HP - (6.5 * levelOcal(i+1) * 10)<=0){callPhoenix(theKnight,MaxHP);
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = (int)(theKnight.HP - (6.5 * levelOcal(i+1) * 10));
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (lancelot || paladin)
+                    {
+                        nWin++;
+                        theKnight.gil += 650;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                        if (poison)
+                        {
+                            if (theKnight.HP - (6.5 * levelOcal(i+1) * 10)<=0){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = (int)(theKnight.HP - (6.5 * levelOcal(i+1) * 10));
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (Lionheart || Odin)
+                    {
+                        nWin++;
+                        theKnight.gil += 6500;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                    }
+                    else
+                    {
+                        if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                        {
+                            nWin++;
+                            theKnight.gil += 650;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                        } else {
+                            nLose++;
+                            if (!Mythrilarmor) {
+                                if (theKnight.HP - (6.5 * levelOcal(i + 1) * 10) <= 0) {
+                                    callPhoenix(theKnight, MaxHP);
+                                    poison = false; poisoncount = 0;
+                                }
+                                else theKnight.HP = (int) (theKnight.HP - (6.5 * levelOcal(i + 1) * 10));
+                            }
+                        }
+                    }
+                    if (poison)
+                    {
+                        if (theKnight.HP - (6.5 * levelOcal(i+1) * 10)<=0){
+                            callPhoenix(theKnight,MaxHP);
+                            poison = false; poisoncount = 0;
+                            if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                        }
+                        else    theKnight.HP = (int)(theKnight.HP - (6.5 * levelOcal(i+1) * 10));
+                    }
+                    break;
+                case 5://Troll
+                    battle=true;
+                    if (Devilwingcount != 0) {break;}
+                    if (arthur)
+                    {
+                        if (excalibur || Lionheart){
+                            nWin++;
+                            theKnight.gil += 850;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                            if (antidote == 0){
+                                if (Devilwingcount == 0) {
+                                    for (int k = 0; k < 5; k++) {
+                                        if (i == 0) {
+                                            if (j > 0) {
+                                                i = arrCastle[j - 1].nEvent;
+                                                j--;
+                                            }
+                                            else { break; }
+                                        }
+                                        else { i--; }
+                                        Devilwingcount++;
+                                    }
+                                    Devilwingcount++;
+                                }
+                            } else {antidote--;}
+                        } else{
+                            if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                            {
+                                nWin++;
+                                theKnight.gil += 850;
+                                if (theKnight.gil>999){theKnight.gil=999;}
+                                if (antidote == 0){
+                                    if (Devilwingcount == 0) {
+                                        for (int k = 0; k < 5; k++) {
+                                            if (i == 0) {
+                                                if (j > 0) {
+                                                    i = arrCastle[j - 1].nEvent;
+                                                    j--;
+                                                }
+                                                else { break; }
+                                            }
+                                            else { i--; }
+                                            Devilwingcount++;
+                                        }
+                                        Devilwingcount++;
+                                    }
+                                } else {antidote--;}
+                            }
+                        }
+                        if (poison)
+                        {
+                            if (theKnight.HP - (8.5 * levelOcal(i+1) * 10)<=0){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                            else    theKnight.HP = (int)(theKnight.HP - (8.5 * levelOcal(i+1) * 10));
+                        }
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (lancelot || paladin)
+                    {
+                        nWin++;
+                        theKnight.gil += 850;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                        if (antidote == 0){
+                            if (Devilwingcount == 0) {
+                                for (int k = 0; k < 5; k++) {
+                                    if (i == 0) {
+                                        if (j > 0) {
+                                            i = arrCastle[j - 1].nEvent;
+                                            j--;
+                                        }
+                                        else { break; }
+                                    }
+                                    else { i--; }
+                                    Devilwingcount++;
+                                }
+                                Devilwingcount++;
+                            }
+                        } else {antidote--;}
+                        break;
+                    }
+                    ///////////////////////////////////////////////////////////////////////////////////
+                    if (Lionheart || Odin)
+                    {
+                        nWin++;
+                        theKnight.gil += 850;
+                        if (theKnight.gil>999){theKnight.gil=999;}
+                        if (antidote == 0){
+                            if (Devilwingcount == 0) {
+                                for (int k = 0; k < 5; k++) {
+                                    if (i == 0) {
+                                        if (j > 0) {
+                                            i = arrCastle[j - 1].nEvent;
+                                            j--;
+                                        }
+                                        else { break; }
+                                    }
+                                    else { i--; }
+                                    Devilwingcount++;
+                                }
+                                Devilwingcount++;
+                            }
+                        } else {antidote--;}
+                    }
+                    else
+                    {
+                        if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                        {
+                            nWin++;
+                            theKnight.gil += 850;
+                            if (theKnight.gil>999){theKnight.gil=999;}
+                            if (antidote == 0){
+                                if (Devilwingcount == 0) {
+                                    for (int k = 0; k < 5; k++) {
+                                        if (i == 0) {
+                                            if (j > 0) {
+                                                i = arrCastle[j - 1].nEvent;
+                                                j--;
+                                            }
+                                            else { break; }
+                                        }
+                                        else { i--; }
+                                        Devilwingcount++;
+                                    }
+                                    Devilwingcount++;
+                                }
+                            } else {antidote--;}
+                        } else {
+                            nLose++;
+                            if (!Mythrilarmor) {
+                                if (theKnight.HP - (8.5 * levelOcal(i + 1) * 10) <= 0) {
+                                    callPhoenix(theKnight, MaxHP);//revival door
+                                    poison = false; poisoncount = 0;
+                                    if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                                }
+                                else theKnight.HP = (int) (theKnight.HP - (8.5 * levelOcal(i + 1) * 10));
+                            }
+                        }
+                    }
+                    if (poison)
+                    {
+                        if (theKnight.HP - (8.5 * levelOcal(i+1) * 10)<=0){
+                            callPhoenix(theKnight,MaxHP);
+                            poison = false; poisoncount = 0;
+                            if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                        }
+                        else    theKnight.HP = (int)(theKnight.HP - (8.5 * levelOcal(i+1) * 10));
+                    }
+                    break;
+                case 6://Tornberry
+                    battle=true;
+                    if (!poison) {
+                        if (arthur)
+                        {
+                            if (excalibur || Lionheart){
+                                nWin++;
+                                theKnight.level++;
+                                if (theKnight.level > 10) { theKnight.level = 10; }
+                            } else{
+                                if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor)
+                                {
+                                    nWin++;
+                                }
+
+                            }
+                            break;
+                        }
+                        ///////////////////////////////////////////////////////////////////////////////////
+                        if (dragonKnight || paladin){
+                            if (Lionheart){
+                                nWin++;
+                                theKnight.level++;
+                                if (theKnight.level > 10) { theKnight.level = 10; }
+                            } else{
+                                if (theKnight.level >= levelOcal(i+1) && !fakeOdin && !fakearmor)
+                                {
+                                    nWin++;
+                                    theKnight.level++;
+                                    if (theKnight.level > 10) { theKnight.level = 10; }
+                                }
+
+                            }
+                        }
+                        ///////////////////////////////////////////////////////////////////////////////////
+                        if (Lionheart || Odin) {
+                            nWin++;
+                            theKnight.level++;
+                            if (theKnight.level > 10) { theKnight.level = 10; }
+                            if (theKnight.gil > 999) { theKnight.gil = 999; }
+                        }
+                        else {if (theKnight.level >= levelOcal(i+1) && !fakeOdin &&!fakearmor){
+                                nWin++;
+                                theKnight.level++;
+                                if (theKnight.level > 10) { theKnight.level = 10; }
+                                if (theKnight.gil > 999) { theKnight.gil = 999; }
+                            }else {
+                                nLose++;
+                                poison = true;
+                                poisoncount=7;
+                            }
+                        }
+                    }
+                    break;
+                case 7://Queen of Card
+                    battle=true;
+                    if ((isfibonacci(theKnight.HP) || Odin || Lionheart || (arthur && excalibur)) && !fakearmor)
+                    {
+                        nWin++;
+                        theKnight.gil=theKnight.gil*2;
+                        if (theKnight.gil > 999) { theKnight.gil = 999; }
+                        if (!Mythrilarmor || !fakearmor){fakearmor=true;fakearmorcount=7;}
+                    } else{
+                        if (Katana)
+                        {
+                            theKnight.gil=theKnight.gil+50;
+                            if (theKnight.gil > 999) { theKnight.gil = 999; }
+                            theKnight.HP = theKnight.HP / 2;
+                        } else {
+                            theKnight.HP = theKnight.HP / 2;
+                            theKnight.gil = theKnight.gil / 2;
+                            if (Mythrilarmor) { Mythrilarmor = false; }
+                        }
+                    }
+
+                    break;
+                case 8://Nina de Ring
+                    if (nina){ break;}
+                    nina = true;
+                    ninacount = 7;
+                    if (guinevere){
+                        poison= false;
+                        poisoncount = 0;
+                        fakearmor= false;
+                        fakearmorcount = 0;
+                        theKnight.HP = MaxHP;
+                        Lionheart = true;
+                        Lionheartcount = 6;
+                        theKnight.gil = theKnight.gil + 60;
+                        if (theKnight.gil > 999) {theKnight.gil = 999;}
+                        break;
+                    }
+                    if (isluckynum(theKnight.HP))
+                    {
+                        if (isfriendlynumber(theKnight.HP,theKnight.gil)){
+                            poison= false;
+                            poisoncount = 0;
+                            fakearmor= false;
+                            fakearmorcount = 0;
+                            theKnight.HP = MaxHP;
+                            Lionheart = true;
+                            if (paladin){Lionheart =true; Lionheartcount = 100;}
+                            else {Lionheart = true; Lionheartcount = 6;}
+                            break;
+                        }
+                        if (theKnight.gil>50 && !isfriendlynumber(theKnight.HP,theKnight.gil))
+                        {
+                            if (poison || fakearmor)
+                            {
+                                poison= false;
+                                poisoncount = 0;
+                                fakearmor= false;
+                                fakearmorcount = 0;
+                                theKnight.gil= theKnight.gil-50;
+                            }
+                            if (!poison)
+                            {
+                                while ((theKnight.gil <= MaxHP) && (theKnight.gil>0) && theKnight.HP != MaxHP)
+                                {
+                                    theKnight.gil--;
+                                    theKnight.HP++;
+                                }
+                            }
+                        }
+                    }
+
+                    break;
+                case 9://Durian
+                    countDurian = 4;
+                    Durian = true;
+                    if ((Odin && Odincount != 0) || (fakeOdin && fakeOdincount != 0)){Odin= false; Odincount = 0; fakeOdin = false; fakeOdincount = 0;}
+                    if (!Durianchop && !Katana) {
+                        if (poison) { poison = false; }
+                        theKnight.HP = MaxHP;
+                        Petal = Petal + 20;
+                        if (Petal > 99) {Petal = 99;}
+                    }
+                    if (Katana) { Durianchop = true; }
+                    break;
+                case 10://Poison Shroom
+                    if (Odin || fakeOdin){break;}
+                    if (!poison){
+                        poison = true;
+                        theKnight.HP=(int)(theKnight.HP/2);
+                        break;
+                    }
+                    if (poison){
+                        callPhoenix(theKnight,MaxHP);
+                        poisoncount = 0;
+                        poison= false;
+                        if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                    }
+                    break;
+                case 11://Odin
+                    if (Durian && countDurian != 0){ break;}
+                    if (!fakeOdin &&!Odin) {
+                            if (Realodinlive == 1) {
+                                Odincount = 5;
+                                Odin = true;
+                            }
+                            if (FakeodinLive == 1) {
+                                fakeOdin = true;
+                                fakeOdincount = 3;
+                            }
+                    }
+                    break;
+                case 12://Merlin
+                    if (poison || fakearmor){poison = false; poisoncount = 0; fakearmor = false; fakearmorcount = 0;}
+                    theKnight.HP = MaxHP;
+                    Goldcoin++;
+                    if (Goldcoin > 99) {Goldcoin = 99;}
+                    break;
+                case 13://Omega
+                {
+                    battle = true;
+                    if (WinOmega) {
+                        battle = false;
+                        break;
+                    }
+                    if (((theKnight.level == 10) && (excalibur)) || (dragonKnight && Lionheart)) {
+                        nWin++;
+                        int Level_up = 0;
+                        WinOmega = true;
+                        Level_up = 10 - theKnight.level;
+                        MaxHP = MaxHP + Level_up * 100;
+                        if (MaxHP > 999) { MaxHP = 999; }
+                        theKnight.level = 10;
+                        theKnight.gil = 999;
+                        break;
+                    } else {
+                        nLose++;
+                        if (!Mythrilarmor) {
+                            callPhoenix(theKnight, MaxHP);//revival door
+                            poison = false; poisoncount = 0;}
+                        if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                    }
+                }
+                case 14://Hades
+                    if (Odin && dragonKnight)
+                    {
+                        nWin++;
+                        Mythrilarmor = true;
+                        if (Goldcoin) {Goldcoin--;}
+                        else {theKnight.gil = 0;}
+                        break;
+                    }
+                    //Odin meet hades
+                    if (Odin && !arthur){
+                        if (Odincount <= 3) {fakeOdincount = Odincount;}
+                        else {fakeOdincount = 3;}
+                        fakeOdin = true;
+                        Odin = false;
+                        Odincount = 0;
+                        Realodinlive = 0;
+                        FakeodinLive = 1;
+                    }
+                    if(Realodinlive == 0 && !fakeOdin){FakeodinLive = 1; fakeOdin= true; fakeOdincount = 3;}
+                    //Enternal LOve
+                    if (theKnight.level >= levelOcal(i+1) || Lionheart || Katana ||
+                        (isEternalLove(spear, hair, excalibur, arthur, lancelot, guinevere) && isPrimeNumber(theKnight.HP))){
+                        if (Lionheart || theKnight.level >= levelOcal(i+1) || (isEternalLove(spear, hair, excalibur, arthur, lancelot, guinevere) && isPrimeNumber(theKnight.HP))) {
+                            nWin++;
+                            Mythrilarmor = true;}
+                        if (Katana && !Lionheart && (theKnight.level < levelOcal(i+1)) ) {nLose++;Mythrilarmor = true; Katana = false;}
+                    } else{
+                        if (Goldcoin){ Goldcoin--; break;}
+                        else{
+                            nLose++;
+                            if (!Mythrilarmor){
+                                callPhoenix(theKnight,MaxHP);
+                                poison = false; poisoncount = 0;
+                                if (revivedoor){i = Doori; j = Doorj; revivedoor = false;}
+                            }
+                        }
+                    }
+                    if (!paladin) {theKnight.gil=0;}
+                    break;
+                case 15://Katana check
+                    if  (Katanacount > 1) {Katana = true; Katanacount--;}
+                    else {break;}
+                case 16: //lock door
+                    if (Devilwingcount > 0){break;}
+                    if  ((theKnight.level > (i+1) % 10) || lancelot || dragonKnight) {break;}
+                    else {i = arrCastle[j].nEvent - 1;}
+                    break;
+                case 17:
+                    Doorj = j;
+                    Doori = i;
+                    if (revivedoorcount == 0){revivedoor = true; revivedoorcount = 1;}
+                    break;
+                case 95:// shield
+                    if (mode==1)
+                    {
+                        Checkmode1(arrCastle[j].arrEvent[i],shield,spear,hair);
+                    } else{
+                        shield = true;}
+                    break;
+                case 96:// Lancelot spear
+                    if (mode==1)
+                    {
+                        Checkmode1(arrCastle[j].arrEvent[i],shield,spear,hair);
+                    } else{
+                        spear = true;}
+                    break;
+                case 97://Guinevere hair
+                    if (mode==1)
+                    {
+                        Checkmode1(arrCastle[j].arrEvent[i],shield,spear,hair);
+                    } else{
+                        hair = true;}
+                    break;
+                case 98://Excalibur
+                    if (spear && hair && shield) { excalibur = true; }
+                    if (arthur) { excalibur = true; }
+                    break;
+                case 99:
+                    battle = true;
+                    if (guinevere){
+                        if (excalibur || Lionheart) {
+                            nWin++;
+                            WinUlti = true;
+                        } else {
+                            nLose++;
+                            if (!Mythrilarmor) {
+                                if  (!arthur) {
+                                    theKnight.HP = theKnight.HP * 3/ 4;
+                                    if (theKnight.HP < 3) {
+                                        theKnight.HP = 1;
+                                    }
+                                }
+                            }
+                        }
+                        if (poison) {
+                            theKnight.HP = theKnight.HP * 3/4;
+                            if (theKnight.HP < 3) {
+                                theKnight.HP = 1;
+                            }
+                        }
+                        break;
+                    }
+                    if (excalibur || Lionheart) {
+                        nWin++;
+                        WinUlti = true;
+                    } else {
+                        nLose++;
+                        if (!Mythrilarmor) {
+                            if  (!arthur) {
+                                theKnight.HP = theKnight.HP / 3;
+                                if (theKnight.HP < 3) {
+                                    theKnight.HP = 1;
+                                }
+                            }
+                        }
+                    }
+                    if (poison) {
+                        theKnight.HP = theKnight.HP / 3;
+                        if (theKnight.HP < 3) {
+                            theKnight.HP = 1;
+                        }
+                    }
+                    break;
+            }//run event, update after 1 event]
+            if (Petal>0){Petal--;}
+            if (poison){poisoncount--;}
+            if (fakearmor){fakearmorcount--;}
+            if (nina){ninacount--;}
+            if (Lionheart){Lionheartcount--;}
+            if (Odin){Odincount--;}
+            if (Odincount == 0){Odin = false;}
+            if (fakeOdin){fakeOdincount--;}
+            if (Devilwingcount > 0) {Devilwingcount--;}
+            if (fakeOdincount == 0){fakeOdincount = false; FakeodinLive = 0;}
+            if (poisoncount==0){poison=false;}
+            if (fakearmorcount == 0){fakearmor=false;}
+            if (ninacount==0){nina = false;}
+            if (Lionheartcount == 0){Lionheart= false;}
+            if (antidote) {antidote--; poison = false; poisoncount = 0;} // remove poison
+            if (Petal == 0 && arthur && !WinUlti) {continue;}
+            if (Petal==0 && !WinUlti){break;}
+            if (WinUlti){break;}
+        }//event update after pass a castle
+        if (battle && !WinUlti){theKnight.level++;MaxHP=MaxHP+100; battle = false;}
+        if (WinUlti){bFlag=1; break;}
+        if (Petal==0 && !WinUlti){bFlag=0; break;}
+
+    }//pass all castles
+    if (!WinUlti && Petal > 0){goto LinkStart;}
+    // success or failure?
+    if (bFlag){
+        pReturn = new report;
+        pReturn->nLose = nLose;
+        pReturn->nWin = nWin;
+        pReturn->nPetal = Petal;
+    } else{return NULL;}
+    return pReturn;
+}

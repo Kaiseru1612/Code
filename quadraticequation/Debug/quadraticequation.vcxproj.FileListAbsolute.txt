@@ -1,0 +1,2 @@
+E:\Code\quadraticequation\Debug\quadraticequation.exe
+E:\Code\quadraticequation\Debug\quadraticequation.pdb

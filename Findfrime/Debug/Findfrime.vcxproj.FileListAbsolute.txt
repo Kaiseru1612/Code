@@ -1,0 +1,2 @@
+E:\Code\Findfrime\Debug\Findfrime.exe
+E:\Code\Findfrime\Debug\Findfrime.pdb

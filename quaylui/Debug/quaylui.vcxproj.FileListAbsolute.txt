@@ -1,0 +1,2 @@
+E:\Code\quaylui\Debug\quaylui.exe
+E:\Code\quaylui\Debug\quaylui.pdb

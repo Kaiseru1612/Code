@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Seclar.dir/main.cpp.o  -o Seclar.exe -Wl,--out-implib,libSeclar.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

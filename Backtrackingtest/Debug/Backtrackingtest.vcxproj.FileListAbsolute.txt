@@ -1,0 +1,2 @@
+E:\Code\Backtrackingtest\Debug\Backtrackingtest.exe
+E:\Code\Backtrackingtest\Debug\Backtrackingtest.pdb

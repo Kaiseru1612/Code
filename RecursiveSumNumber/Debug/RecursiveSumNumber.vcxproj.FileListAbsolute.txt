@@ -1,0 +1,2 @@
+E:\Code\RecursiveSumNumber\Debug\RecursiveSumNumber.exe
+E:\Code\RecursiveSumNumber\Debug\RecursiveSumNumber.pdb

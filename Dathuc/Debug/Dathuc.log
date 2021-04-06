@@ -1,0 +1,4 @@
+﻿  Source.cpp
+E:\Code\Dathuc\Source.cpp(10,6): warning C4101: 'b': unreferenced local variable
+E:\Code\Dathuc\Source.cpp(6,15): warning C4101: 'j': unreferenced local variable
+  Dathuc.vcxproj -> E:\Code\Dathuc\Debug\Dathuc.exe

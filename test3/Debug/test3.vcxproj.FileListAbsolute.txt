@@ -1,0 +1,2 @@
+E:\Code\test3\Debug\test3.exe
+E:\Code\test3\Debug\test3.pdb

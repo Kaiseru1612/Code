@@ -1,0 +1,2 @@
+E:\Code\Angle\Debug\Angle.exe
+E:\Code\Angle\Debug\Angle.pdb

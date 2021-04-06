@@ -1,0 +1,2 @@
+E:\Code\pointertest\Debug\pointertest.exe
+E:\Code\pointertest\Debug\pointertest.pdb

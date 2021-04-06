@@ -1,0 +1,2 @@
+E:\Code\xpowern\Debug\xpowern.exe
+E:\Code\xpowern\Debug\xpowern.pdb

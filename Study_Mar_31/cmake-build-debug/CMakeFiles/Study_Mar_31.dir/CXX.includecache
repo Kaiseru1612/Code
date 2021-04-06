@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/e/Code/Study_Mar_31/main.cpp
+iostream
+-
+iomanip
+-
+cmath
+-
+fstream
+-
+string
+-
+vector
+-
+

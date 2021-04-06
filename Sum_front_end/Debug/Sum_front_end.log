@@ -1,0 +1,3 @@
+﻿  Source.cpp
+E:\Code\Sum_front_end\Source.cpp(9,6): warning C4101: 'sum': unreferenced local variable
+  Sum_front_end.vcxproj -> E:\Code\Sum_front_end\Debug\Sum_front_end.exe

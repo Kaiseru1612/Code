@@ -1,0 +1,2 @@
+E:\Code\Sum_front_end\Debug\Sum_front_end.exe
+E:\Code\Sum_front_end\Debug\Sum_front_end.pdb

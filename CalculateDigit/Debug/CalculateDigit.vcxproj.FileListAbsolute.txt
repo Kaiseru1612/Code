@@ -1,0 +1,2 @@
+E:\Code\CalculateDigit\Debug\CalculateDigit.exe
+E:\Code\CalculateDigit\Debug\CalculateDigit.pdb

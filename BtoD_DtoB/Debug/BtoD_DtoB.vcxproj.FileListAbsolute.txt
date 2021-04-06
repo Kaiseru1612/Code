@@ -1,0 +1,2 @@
+E:\Code\BtoD_DtoB\Debug\BtoD_DtoB.exe
+E:\Code\BtoD_DtoB\Debug\BtoD_DtoB.pdb

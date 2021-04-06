@@ -1,0 +1,2 @@
+E:\Code\Chanle\Debug\Chanle.exe
+E:\Code\Chanle\Debug\Chanle.pdb

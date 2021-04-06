@@ -1,0 +1,4 @@
+﻿  Source.cpp
+E:\Code\quaylui\Source.cpp(29,12): warning C4101: 'j': unreferenced local variable
+E:\Code\quaylui\Source.cpp(29,9): warning C4101: 'i': unreferenced local variable
+  quaylui.vcxproj -> E:\Code\quaylui\Debug\quaylui.exe

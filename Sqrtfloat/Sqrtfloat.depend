@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1586612188 source:e:\code\sqrtfloat\main.cpp
+	<iostream>
+	<math.h>
+	<iomanip>
+

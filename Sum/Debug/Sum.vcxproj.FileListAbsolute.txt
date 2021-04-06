@@ -1,0 +1,2 @@
+E:\Code\Sum\Debug\Sum.exe
+E:\Code\Sum\Debug\Sum.pdb

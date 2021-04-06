@@ -1,0 +1,2 @@
+E:\Code\Pallendrome\Debug\Pallendrome.exe
+E:\Code\Pallendrome\Debug\Pallendrome.pdb

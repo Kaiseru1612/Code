@@ -1,0 +1,2 @@
+E:\Code\Dathuc\Debug\Dathuc.exe
+E:\Code\Dathuc\Debug\Dathuc.pdb

@@ -1,0 +1,2 @@
+E:\Code\Biggest\Debug\Biggest.exe
+E:\Code\Biggest\Debug\Biggest.pdb

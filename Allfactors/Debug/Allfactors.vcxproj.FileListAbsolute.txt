@@ -1,0 +1,2 @@
+E:\Code\Allfactors\Debug\Allfactors.exe
+E:\Code\Allfactors\Debug\Allfactors.pdb

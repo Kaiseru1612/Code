@@ -1,0 +1,4 @@
+﻿  Source.cpp
+E:\Code\Ckofn\Source.cpp(10,9): warning C4101: 'j': unreferenced local variable
+E:\Code\Ckofn\Source.cpp(10,6): warning C4101: 'i': unreferenced local variable
+  Ckofn.vcxproj -> E:\Code\Ckofn\Debug\Ckofn.exe

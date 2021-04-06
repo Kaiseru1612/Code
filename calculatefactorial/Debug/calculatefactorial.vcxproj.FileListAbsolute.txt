@@ -1,0 +1,2 @@
+C:\Users\DELL\source\repos\calculatefactorial\Debug\calculatefactorial.exe
+C:\Users\DELL\source\repos\calculatefactorial\Debug\calculatefactorial.pdb

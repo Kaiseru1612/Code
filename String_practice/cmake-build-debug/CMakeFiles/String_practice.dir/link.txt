@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/String_practice.dir/main.cpp.o  -o String_practice.exe -Wl,--out-implib,libString_practice.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

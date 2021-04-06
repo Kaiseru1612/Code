@@ -1,0 +1,3 @@
+﻿  Source.cpp
+E:\Code\BtoD_DtoB\Source.cpp(53,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  BtoD_DtoB.vcxproj -> E:\Code\BtoD_DtoB\Debug\BtoD_DtoB.exe

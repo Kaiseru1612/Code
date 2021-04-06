@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Assignment193" targetName="Assignment193" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe86efca-799a-4f21-b636-015a7248b3eb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1gPlyzqyFQqE5oeSjboyoYodOrX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="C:/cygwin64/home/DELL" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Assignment193" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assignment193" TARGET_NAME="Assignment193" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assignment193" RUN_TARGET_NAME="Assignment193">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe86efca-799a-4f21-b636-015a7248b3eb" name="Default Changelist" comment="" />
+      <created>1598024367206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598024367206</updated>
+      <workItem from="1598024368273" duration="89000" />
+      <workItem from="1598024458921" duration="291000" />
+      <workItem from="1598024754328" duration="4379000" />
+      <workItem from="1598075109355" duration="520000" />
+      <workItem from="1598106645605" duration="819000" />
+      <workItem from="1598107691004" duration="163000" />
+      <workItem from="1598108107155" duration="3114000" />
+      <workItem from="1598171445127" duration="11000" />
+      <workItem from="1598172479702" duration="10000" />
+      <workItem from="1598177255925" duration="3044000" />
+      <workItem from="1598188983877" duration="361000" />
+      <workItem from="1598192395409" duration="4034000" />
+      <workItem from="1598204568460" duration="4761000" />
+      <workItem from="1598242547198" duration="667000" />
+      <workItem from="1598248126881" duration="413000" />
+      <workItem from="1598248989928" duration="1626000" />
+      <workItem from="1598269875713" duration="7212000" />
+      <workItem from="1598289090738" duration="5583000" />
+      <workItem from="1598323580174" duration="5069000" />
+      <workItem from="1598344484073" duration="2795000" />
+      <workItem from="1598347736593" duration="26000" />
+      <workItem from="1598348406159" duration="8816000" />
+      <workItem from="1598407842810" duration="2679000" />
+      <workItem from="1598424056390" duration="2658000" />
+      <workItem from="1598433374207" duration="1203000" />
+      <workItem from="1598443684291" duration="3050000" />
+      <workItem from="1598494600277" duration="1171000" />
+      <workItem from="1598534790553" duration="623000" />
+      <workItem from="1598706962049" duration="622000" />
+      <workItem from="1598782148569" duration="1012000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="494" y="139" key="FileChooserDialogImpl" timestamp="1598347760260">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="494" y="139" key="FileChooserDialogImpl/62.0.1304.768@62.0.1304.768" timestamp="1598347760260" />
+    <state width="1261" height="239" key="GridCell.Tab.0.bottom" timestamp="1598427547660">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="239" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1598427547660" />
+    <state width="1261" height="239" key="GridCell.Tab.0.center" timestamp="1598427547660">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="239" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1598427547660" />
+    <state width="1261" height="239" key="GridCell.Tab.0.left" timestamp="1598427547660">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="239" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1598427547660" />
+    <state width="1261" height="239" key="GridCell.Tab.0.right" timestamp="1598427547660">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="239" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1598427547660" />
+    <state width="1261" height="239" key="GridCell.Tab.1.bottom" timestamp="1598427547660">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="239" key="GridCell.Tab.1.bottom/62.0.1304.768@62.0.1304.768" timestamp="1598427547660" />
+    <state width="1261" height="239" key="GridCell.Tab.1.center" timestamp="1598427547660">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="239" key="GridCell.Tab.1.center/62.0.1304.768@62.0.1304.768" timestamp="1598427547660" />
+    <state width="1261" height="239" key="GridCell.Tab.1.left" timestamp="1598427547660">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="239" key="GridCell.Tab.1.left/62.0.1304.768@62.0.1304.768" timestamp="1598427547660" />
+    <state width="1261" height="239" key="GridCell.Tab.1.right" timestamp="1598427547660">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="239" key="GridCell.Tab.1.right/62.0.1304.768@62.0.1304.768" timestamp="1598427547660" />
+    <state width="640" height="201" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1598024751200">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="640" height="201" key="ImportCMakeProjectWizard.bottomPanel/62.0.1304.768@62.0.1304.768" timestamp="1598024751200" />
+    <state width="640" height="470" key="ImportCMakeProjectWizard.topPanel" timestamp="1598024751200">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="640" height="470" key="ImportCMakeProjectWizard.topPanel/62.0.1304.768@62.0.1304.768" timestamp="1598024751200" />
+    <state x="266" y="113" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1598289830244">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="266" y="113" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/62.0.1304.768@62.0.1304.768" timestamp="1598289830244" />
+    <state x="370" y="172" key="run.anything.popup" timestamp="1598207513368">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="370" y="172" key="run.anything.popup/62.0.1304.768@62.0.1304.768" timestamp="1598207513368" />
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598293384109">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1598293384109" />
+  </component>
+</project>

@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/testCodeWar.dir/main.cpp.o  -o testCodeWar.exe -Wl,--out-implib,libtestCodeWar.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

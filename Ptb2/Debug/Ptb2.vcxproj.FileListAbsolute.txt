@@ -1,0 +1,2 @@
+E:\Code\Ptb2\Debug\Ptb2.exe
+E:\Code\Ptb2\Debug\Ptb2.pdb

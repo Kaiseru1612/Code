@@ -1,0 +1,2 @@
+E:\Code\TransposeMatrix\Debug\TransposeMatrix.exe
+E:\Code\TransposeMatrix\Debug\TransposeMatrix.pdb

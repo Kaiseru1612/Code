@@ -1,0 +1,2 @@
+E:\Code\Vetamgiac\Debug\Vetamgiac.exe
+E:\Code\Vetamgiac\Debug\Vetamgiac.pdb

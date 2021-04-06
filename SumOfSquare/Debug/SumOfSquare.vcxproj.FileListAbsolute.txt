@@ -1,0 +1,2 @@
+E:\Code\SumOfSquare\Debug\SumOfSquare.exe
+E:\Code\SumOfSquare\Debug\SumOfSquare.pdb

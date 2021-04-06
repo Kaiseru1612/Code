@@ -1,0 +1,2 @@
+E:\Code\Fibonaci\Debug\Fibonaci.exe
+E:\Code\Fibonaci\Debug\Fibonaci.pdb

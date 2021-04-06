@@ -1,0 +1,4 @@
+﻿  Strlength.cpp
+E:\Code\Strlength\Strlength.cpp(15,37): error C2065: 'str': undeclared identifier
+E:\Code\Strlength\Strlength.cpp(16,37): error C2065: 'str': undeclared identifier
+E:\Code\Strlength\Strlength.cpp(17,37): error C2065: 'str': undeclared identifier

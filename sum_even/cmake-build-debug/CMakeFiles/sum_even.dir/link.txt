@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/sum_even.dir/main.cpp.o  -o sum_even.exe -Wl,--out-implib,libsum_even.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

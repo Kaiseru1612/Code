@@ -1,0 +1,2 @@
+E:\Code\year\Debug\year.exe
+E:\Code\year\Debug\year.pdb

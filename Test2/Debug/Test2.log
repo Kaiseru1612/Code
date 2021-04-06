@@ -1,0 +1,6 @@
+﻿  Source.cpp
+E:\Code\Test2\Source.cpp(38,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\Code\Test2\Source.cpp(114,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Code\Test2\Source.cpp(118,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Code\Test2\Source.cpp(119,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Test2.vcxproj -> E:\Code\Test2\Debug\Test2.exe
