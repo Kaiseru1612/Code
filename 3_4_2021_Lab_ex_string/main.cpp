@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include <string.h>
-#include <cstring>
+//#include <string.h>
+//#include <cstring>
 #include <fstream>
 using namespace std;
 
@@ -14,17 +14,24 @@ string revstr(string str){
     return result;
 }
 void process(string fileName) {
-    // This function is used to read the input file,
-    // DO NOT MODIFY THIS FUNTION
-    // Because you do not need to submit this main file.
     ifstream myfile(fileName);
+    string data="";
+    int countalphabet=0,countchar=0,countspace=0;
     if (myfile.is_open())
     {
         string *tmp = new string;
-        getline(myfile, *tmp);
-
+        while (!myfile.eof()){
+            getline(myfile, *tmp);
+            data +=  *tmp;
+        }
         delete tmp;
     }
+    for (int i = 0; i < data.size(); i++) {
+        if (data[i] ==' ') countspace++;
+        if ((data[i] >= 'a' && data[i] <='z')||data[i] >= 'A' && data[i] <='Z') countalphabet++;
+        countchar++;
+    }
+    cout << countspace << " " << countchar << " " << countalphabet;
 }
 int main() {
 /*    string input="";
@@ -110,7 +117,27 @@ int main() {
         result = "0";
     }
     cout << result;*/
-    const char *filename = "testcase.txt";
-
+/*    const char *filename = "testcase.txt";
+    process(filename);*/
+/*    string str;
+    cin >> str;
+    int n = str.size();
+    bool pal;
+    int maxLength = 1, start = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            pal = true;
+            for (int k = 0; k < (j - i + 1) / 2; k++){
+                if (str[i + k] != str[j - k]) pal = false;
+            }
+            if (pal && (j - i + 1) > maxLength) {
+                start = i;
+                maxLength = j - i + 1;
+                }
+            }
+    }
+    for (int i = start; i < start+maxLength; i++) {
+        cout << str[i];
+    }*/
     return 0;
 }
