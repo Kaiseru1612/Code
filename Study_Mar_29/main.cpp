@@ -46,16 +46,66 @@ char* cpstr(char* s){
 }
 
 
-
+/*typedef int Array2D[3][3];*/
 int main(int narg /*number of argument*/, char ** argv /*long*/) {
-    char buf[MAX_STRING_LEN];
+/*    char buf[MAX_STRING_LEN];
     ProgConfig config{"DefaultInput.txt", "DefaultOutput"};
     parsingArgument(narg, argv, config);
 //    cin.getline(buf, MAX_BUFFER_SIZE);
 //    char* s= cpstr(buf);
 //    cout << buf << '\n';
-    cout << add<float, float, double>(1.0f,2.5);
+    cout << add<float, float, double>(1.0f,2.5);*/
     //StudentInfo::BDay bd; change scope to call struct BDay. if remove name of struct, we cant call it but it still a member
+/*    Array2D a;
+    Array2D *pa = nullptr;
+    for (int i = 0; i < 3 ;i++) {
+        for (int j = 0; j < 3; ++j) {
+            a[i][j]=rand()%10;
+        }
+    }
+    pa = &a;
+    for (int i = 0; i < 3 ;i++) {
+        for (int j = 0; j < 3; ++j) {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+    for (int i = 0; i < 3 ;i++) {
+        for (int j = 0; j < 3; ++j) {
+            cout << *pa[i][j] << " ";
+        }
+
+        cout << endl;
+    }*/
+/*    int n = 2;
+    int a[n][n];
+    int *pa[2] ;
+
+    for (int i = 0; i < n; i++) {
+        pa[i] = &a[i];
+    }
+    for (int i = 0; i < 2; i++) {
+        ppa[i]= &pa[i];
+    }
+    for (int i = 0; i < ; ++i) {
+        
+    }*/
+int n =2, k=2;
+    int a[k][n][n];
+    for (int i = 0; i < k; i++) {
+        for (int j = 0; j < n; j++) {
+            for (int l = 0; l < n; l++) {
+                a[i][j][k] = rand()%10;
+            }
+        }
+    }
+    for (int i = 0; i < k; i++) {
+        for (int j = 0; j < n; j++) {
+            for (int l = 0; l < n; l++) {
+                a[i][j][k] = rand()%10;
+            }
+        }
+    }
     return 0;
 }
 

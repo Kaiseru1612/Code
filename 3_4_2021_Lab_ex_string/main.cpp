@@ -13,10 +13,13 @@ string revstr(string str){
     }
     return result;
 }
+
 void process(string fileName) {
-    ifstream myfile(fileName);
+    /*fstream myfile(fileName);
     string data="";
-    int countalphabet=0,countchar=0,countspace=0;
+    int countalphabet=0;
+    int countchar=0;
+    int countspace=0;
     if (myfile.is_open())
     {
         string *tmp = new string;
@@ -26,12 +29,60 @@ void process(string fileName) {
         }
         delete tmp;
     }
-    for (int i = 0; i < data.size(); i++) {
+    int n = data.size();
+    for (int i = 0; i < n; i++) {
         if (data[i] ==' ') countspace++;
-        if ((data[i] >= 'a' && data[i] <='z')||data[i] >= 'A' && data[i] <='Z') countalphabet++;
+        if (((data[i] >= 'a') && (data[i] <='z')) || ((data[i] >= 'A') && (data[i] <='Z'))) countalphabet++;
+        countchar++;
+    }*/
+    ifstream ifs;
+    ifs.open(fileName);
+    char c;
+    int countalphabet=0;
+    int countchar=0;
+    int countspace=0;
+    while (ifs.get(c)){
+        if (c ==' ') countspace = countspace +1;
+        if (((c >= 'a') && (c <='z')) || ((c >= 'A') && (c <='Z'))) countalphabet = countalphabet +1;
         countchar++;
     }
     cout << countspace << " " << countchar << " " << countalphabet;
+}
+void process2(string fileName)   {
+    ifstream ifs;
+    ifs.open(fileName);
+    string tmp="";
+    int i=0;
+    int M[100];
+    double maxrow;
+    char c;
+//    getline(ifs,tmp);
+//    int m = tmp.size();
+//    for (int j = 0; j < m; j++) {
+//
+//    }
+    while (ifs.get(c)){
+        if (c == '\n'){
+            double n = stod(tmp);
+            if (n > maxrow) maxrow = n;
+            M[i] = maxrow;
+            i++;
+            tmp = "";
+            maxrow = -999;
+        }
+        else if (c == ' ') {
+            double n = stod(tmp);
+            if (n > maxrow) maxrow = n;
+            tmp = "";
+        }
+        else{
+            tmp+=c;
+        }
+        for (int j = 0; j <= i; j++) {
+            cout << M[j] << '\n';
+        }
+
+    }
 }
 int main() {
 /*    string input="";
@@ -117,8 +168,8 @@ int main() {
         result = "0";
     }
     cout << result;*/
-/*    const char *filename = "testcase.txt";
-    process(filename);*/
+    const char *filename = "testcase.txt";
+    process2(filename);
 /*    string str;
     cin >> str;
     int n = str.size();
