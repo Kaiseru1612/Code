@@ -55,6 +55,21 @@ void process(string fileName)   {
     avew = sumw / countw;
     cout << setprecision(5) << aveh << " " << avew;
 }
+int findmaxsubarray(int *A, int N,int* &pSUB,int &nSUB){
+    int  Maxacc = 0;
+    for (int *pS = A, *pE=pS+N; pS!=pE  ; pS++) {
+        int acc = *pS;
+        for (int *pSub = pS +1; pSub != pE ; pSub++) {
+            if (acc > Maxacc){
+             Maxacc = acc;
+             pSUB = pS;
+             nSUB = pSUB - pS;
+            }
+            acc += *pSub;
+        }
+    }
+    return Maxacc;
+}
 int main() {
     /*string str;
     cin >> str;
@@ -75,7 +90,72 @@ int main() {
         max = count;
     }
     cout << max;*/
-    const char *filename = "test.txt";
-    process(filename);
+/*    const char *filename = "test.txt";
+    process(filename);*/
+/*string str;
+    string result;
+    cin >> str;
+    int n = str.size();
+    for (int i = 0; i < n; ++i) {
+
+        for (int j = 0; j < n; j++) {
+            if (str[i] == str[j]) {
+                break;
+            }
+        }
+    }*/
+/*    int *pSUB, nSUB;
+    int A[]={-2, 3, -2, 3, 4, -3};
+    cout << findmaxsubarray(A,6,pSUB,nSUB)<< '\n';
+    for (int i = 0; i < nSUB; i++) {
+        cout << pSUB[i] << " ";
+    }*/
+/*    string str;
+    string tmp="";
+    bool identical=false;
+    int count = 0;
+    int max = 1;
+    cin >> str;
+    int n = str.size();
+    for (int i = 0; i < n; ++i) {
+        int m = tmp.size();
+        for (int j = 0; j < m; j++) {
+            if (str[i] == tmp[j]){
+             identical = true;
+             break;
+            }
+        }
+        if (identical) {
+            tmp = "";
+            if (count >= max) max = count;
+            count = 0;
+            identical = false;
+        }
+        else {
+            m = tmp.size();
+            tmp += str[i];
+            count++;
+        }
+    }
+    cout << max;*/
+    string a,b;
+    string tmp;
+    int m,n;
+    cin >> m ;
+    cin >> n;
+    cin.clear();
+    for (int i = 0; i < n; i++) {
+        cin >> tmp;
+        a+=tmp;
+        tmp="";
+    }
+    cin.clear();
+    for (int i = 0; i < m; i++) {
+        cin >> tmp;
+        b+=tmp;
+        tmp="";
+    }
+    if (a == b) cout << "true";
+    else cout << "false";
     return 0;
 }
