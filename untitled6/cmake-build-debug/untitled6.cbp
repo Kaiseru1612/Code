@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/e/Code/untitled6/lol.h">
+			<Option target="untitled6"/>
+		</Unit>
 		<Unit filename="/cygdrive/e/Code/untitled6/main.cpp">
 			<Option target="untitled6"/>
 		</Unit>
