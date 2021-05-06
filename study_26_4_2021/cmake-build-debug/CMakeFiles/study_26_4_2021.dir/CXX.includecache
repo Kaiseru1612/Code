@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/e/Code/study_26_4_2021/lol.h
+iostream
+-
+string
+-
+string.h
+-
+
+/cygdrive/e/Code/study_26_4_2021/main.cpp
+iostream
+-
+lol.h
+/cygdrive/e/Code/study_26_4_2021/lol.h
+
