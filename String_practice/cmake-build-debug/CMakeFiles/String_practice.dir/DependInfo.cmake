@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/e/Code/String_practice/main.cpp" "/cygdrive/e/Code/String_practice/cmake-build-debug/CMakeFiles/String_practice.dir/main.cpp.o"
+  "/cygdrive/d/Code/String_practice/main.cpp" "/cygdrive/d/Code/String_practice/cmake-build-debug/CMakeFiles/String_practice.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

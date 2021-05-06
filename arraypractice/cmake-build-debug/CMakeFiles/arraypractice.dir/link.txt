@@ -1,1 +1,1 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/arraypractice.dir/main.cpp.o  -o arraypractice.exe -Wl,--out-implib,libarraypractice.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/arraypractice.dir/main.cpp.o -o arraypractice.exe -Wl,--out-implib,libarraypractice.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
