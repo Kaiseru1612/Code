@@ -31,8 +31,6 @@ void removeLL(LLItem<T> * &pHead, int idx){
         delete p;
     }
 }
-//template <typename T>
-//LLItem<typename T> * removeLL(LLItem<typename T> * pHead, int idx);
 template <typename T>
 void insertLL(LLItem<T> * &pHead, int idx,const T &a){
     if (idx){
@@ -41,14 +39,12 @@ void insertLL(LLItem<T> * &pHead, int idx,const T &a){
             idx--;
             pPrev = pPrev->pNext;
         }
-        //pPrev->pNext = new LLItem<T> (a, pPrev->pNext);
         LLItem<T> *p = new LLItem<T>;
         p->data = a;
         p->pNext = pPrev->pNext;
         pPrev->pNext=p;
     }
     else {
-        //pHead = new LLItem<T>(a, pHead);
         LLItem<T> *p = new LLItem<T>;
         p->data = a;
         p->pNext = pHead;
@@ -58,14 +54,6 @@ void insertLL(LLItem<T> * &pHead, int idx,const T &a){
 
 template <typename T>
 void reversetLL(LLItem<T> * &pHead){
-/*    LLItem<T> *pNL = nullptr;
-    while (pHead){
-        LLItem<T> *p = pHead;
-        pHead = p->pNext;
-        p->pNext = pNL;
-        pNL = p;
-    }
-    pHead = pNL;*/
     if (!pHead) return;
     LLItem<T> *p = pHead;
     LLItem<T> *p1 = pHead->pNext;
@@ -97,9 +85,6 @@ void sortLL(LLItem<T> * &pHead, bool (*lt)(T& , T& ) ){
 template <typename T>
 void cloneLL(LLItem<T> * &pHead);
 
-/*template <typename T>
-T atLL(LLItem<T> * &pHead, int idx);*/
-
 template <typename T>
 T* atLL(LLItem<T> * pHead, int idx,const T &a){
     if (!pHead) return nullptr;
@@ -110,15 +95,6 @@ T* atLL(LLItem<T> * pHead, int idx,const T &a){
     if (pHead) return &pHead->data;
     return nullptr;
 }
-
-/*template <typename T>
-T& insertLL(LLItem<T> * &pHead, int idx,const T &a);
-
-template <typename T>
-const T* insertLL(LLItem<T> * &pHead, int idx,const T &a);
-
-template <typename T>
-const T& insertLL(LLItem<T> * &pHead, int idx,const T &a);*/
 
 template <typename T>
 void destroyLL(LLItem<T> * &pHead){

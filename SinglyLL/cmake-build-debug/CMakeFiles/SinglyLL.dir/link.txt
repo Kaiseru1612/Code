@@ -1,1 +1,0 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/SinglyLL.dir/main.cpp.o  -o SinglyLL.exe -Wl,--out-implib,libSinglyLL.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

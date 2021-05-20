@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Code/Shape_class/main.cpp
+iostream
+-
+myLib.h
+/cygdrive/d/Code/Shape_class/myLib.h
+
+/cygdrive/d/Code/Shape_class/myLib.h
+iostream
+-
+vector
+-
+

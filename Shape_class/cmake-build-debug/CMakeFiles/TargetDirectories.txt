@@ -1,0 +1,3 @@
+/cygdrive/d/Code/Shape_class/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/Code/Shape_class/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/d/Code/Shape_class/cmake-build-debug/CMakeFiles/Shape_class.dir

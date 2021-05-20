@@ -1,1 +1,1 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/study_26_4_2021.dir/main.cpp.o  -o study_26_4_2021.exe -Wl,--out-implib,libstudy_26_4_2021.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/study_26_4_2021.dir/main.cpp.o -o study_26_4_2021.exe -Wl,--out-implib,libstudy_26_4_2021.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
