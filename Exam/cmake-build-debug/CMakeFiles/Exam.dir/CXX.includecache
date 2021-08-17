@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Code/Exam/main.cpp
+iostream
+-
+iostream
+-
+fstream
+-
+string
+-
+iostream
+-
+vector
+-
+iostream
+-
+vector
+-
+string
+-
+iostream
+-
+

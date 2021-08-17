@@ -161,7 +161,7 @@ int main() {
         S = tmp1 + tmp2;
     }
     cout << S;*/
-/*    LLItem<int> * pList = nullptr;
+    LLItem<int> * pList = nullptr;
     for (int i = 0; i < 8; i++) {
         insertLL(pList, 0, rand()%100 );
     }
@@ -171,7 +171,7 @@ int main() {
     sortLL(pList, greaterthan);
     printLL(pList);
     sortLL(pList, lessthan);
-    printLL(pList);*/
+    printLL(pList);
 /*    string s = "-1";
     cout << stoi(s)<<'\n';
     cout << toint(s)<<'\n';

@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/LLPracticeExam.dir/main.cpp.o -o LLPracticeExam.exe -Wl,--out-implib,libLLPracticeExam.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

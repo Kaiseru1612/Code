@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Code/practice203/main.cpp
+iostream
+-
+iostream
+-
+iostream
+-
+iostream
+-
+string.h
+-
+iostream
+-
+string.h
+-
+

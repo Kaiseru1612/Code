@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/e/Code/untitled6/lol.h
+/cygdrive/d/Code/untitled6/lol.h
 iostream
 -
 iomanip
 -
 
-/cygdrive/e/Code/untitled6/main.cpp
+/cygdrive/d/Code/untitled6/main.cpp
 iostream
 -
 string
@@ -22,5 +22,5 @@ cmath
 cerrno
 -
 lol.h
-/cygdrive/e/Code/untitled6/lol.h
+/cygdrive/d/Code/untitled6/lol.h
 

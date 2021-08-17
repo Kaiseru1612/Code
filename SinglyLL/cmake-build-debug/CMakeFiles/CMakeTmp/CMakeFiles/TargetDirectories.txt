@@ -1,3 +1,0 @@
-/cygdrive/d/Code/SinglyLL/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir
-/cygdrive/d/Code/SinglyLL/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
-/cygdrive/d/Code/SinglyLL/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_c3712.dir

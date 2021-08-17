@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/practice203.dir/main.cpp.o -o practice203.exe -Wl,--out-implib,libpractice203.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
